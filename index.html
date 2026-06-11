@@ -3,103 +3,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>کارت ویزیت من</title>
+<title>گالری طلای فریال</title>
 
 <style>
-body{
-    margin:0;
-    background:#07152d;
-    color:white;
-    font-family:tahoma;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:tahoma;
 }
 
-.container{
-    max-width:420px;
-    margin:30px auto;
-    padding:20px;
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+background:
+radial-gradient(circle at top,#3b2a00,#0b1220 40%,#050505 100%);
+color:#fff;
 }
 
 .card{
-    background:#1a1a1a;
-    border-radius:30px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 0 30px rgba(255,255,255,.1);
+width:100%;
+max-width:450px;
+padding:30px;
+border-radius:30px;
+
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,215,0,.25);
+
+box-shadow:
+0 0 40px rgba(255,215,0,.15),
+0 0 80px rgba(255,215,0,.05);
+
+animation:show .8s ease;
+}
+
+@keyframes show{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 .logo{
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    object-fit:cover;
+width:130px;
+height:130px;
+display:block;
+margin:auto;
+border-radius:50%;
+object-fit:cover;
+border:4px solid gold;
+box-shadow:0 0 25px rgba(255,215,0,.5);
 }
 
-h1{
-    margin-top:15px;
+.title{
+text-align:center;
+margin-top:18px;
+font-size:32px;
+font-weight:bold;
+color:#FFD700;
+}
+
+.subtitle{
+text-align:center;
+margin-top:8px;
+color:#ddd;
+font-size:14px;
+}
+
+.content{
+margin-top:25px;
+line-height:2;
+color:#eee;
+font-size:14px;
 }
 
 .btn{
-    display:block;
-    text-decoration:none;
-    color:white;
-    margin:12px 0;
-    padding:14px;
-    border-radius:12px;
-    font-weight:bold;
+display:block;
+text-decoration:none;
+text-align:center;
+padding:15px;
+border-radius:14px;
+margin-top:12px;
+font-weight:bold;
+color:white;
+transition:.3s;
 }
 
-.website{background:#1976d2;}
-.whatsapp{background:#25D366;}
-.telegram{background:#229ED9;}
-.instagram{
-background:linear-gradient(45deg,#f09433,#dc2743,#cc2366,#bc1888);
+.btn:hover{
+transform:translateY(-3px);
 }
-.phone{background:#ff9800;}
+
+.telegram{
+background:#229ED9;
+}
+
+.instagram{
+background:linear-gradient(
+45deg,
+#f09433,
+#dc2743,
+#bc1888
+);
+}
+
+.phone{
+background:linear-gradient(
+90deg,
+#d4a017,
+#ffd700
+);
+color:#000;
+}
 
 .address{
-margin-top:20px;
-font-size:14px;
+margin-top:25px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.15);
+text-align:center;
+line-height:2;
 color:#ddd;
 }
-</style>
 
+.footer{
+margin-top:20px;
+text-align:center;
+color:#999;
+font-size:12px;
+}
+
+</style>
 </head>
 <body>
 
-<div class="container">
-
 <div class="card">
 
-<img src="logo.jpg" class="logo">
+<img src="logo.png" class="logo">
 
-<h1>نام شما</h1>
+<div class="title">
+گالری طلای فریال
+</div>
 
-<p>توضیحات کوتاه کسب و کار</p>
+<div class="subtitle">
+طلا • جواهر • سرمایه‌گذاری
+</div>
 
-<a class="btn website" href="https://yourwebsite.com">
-وبسایت
-</a>
+<div class="content">
 
-<a class="btn whatsapp" href="https://wa.me/989121234567">
-واتساپ
-</a>
+✨ خدمات و محصولات:
 
-<a class="btn telegram" href="https://t.me/username">
+<br><br>
+
+• جدیدترین مدل‌های طلا و جواهر<br>
+• مناسب برای هدیه، مراسم و استفاده روزمره<br>
+• انتخابی مطمئن برای سرمایه‌گذاری<br>
+• طراحی‌های شیک، به‌روز و متنوع<br>
+• صندوق طلا<br><br>
+
+✨ منتظر حضور گرم شما هستیم ✨
+
+</div>
+
+<a class="btn telegram"
+href="https://t.me/faryallgold"
+target="_blank">
 تلگرام
 </a>
 
-<a class="btn instagram" href="https://instagram.com/username">
+<a class="btn instagram"
+href="https://www.instagram.com/faryallgold"
+target="_blank">
 اینستاگرام
 </a>
 
-<a class="btn phone" href="tel:09121234567">
-تماس
+<a class="btn phone"
+href="tel:09184674761">
+تماس با عامریان
+</a>
+
+<a class="btn phone"
+href="tel:0918388918">
+تماس با رشیدی
 </a>
 
 <div class="address">
-آدرس شما
+کرمانشاه<br>
+مسکن، طلافروش‌ها<br>
+پاساژ نگین<br>
+گالری طلای فریال
 </div>
 
+<div class="footer">
+Faryal Gold Gallery ©
 </div>
 
 </div>
