@@ -1,9 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>گالری طلای فریال</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -11,39 +17,47 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:tahoma;
+font-family:'Vazirmatn',sans-serif;
 }
 
 body{
 min-height:100vh;
+padding:20px;
+
+background:
+radial-gradient(circle at top,
+#5f4300 0%,
+#111827 40%,
+#050505 100%);
+
 display:flex;
 justify-content:center;
 align-items:center;
-padding:20px;
-background:
-radial-gradient(circle at top,#3b2a00,#0b1220 40%,#050505 100%);
-color:#fff;
 }
 
 .card{
-width:100%;
-max-width:450px;
-padding:30px;
-border-radius:30px;
 
-background:rgba(255,255,255,0.06);
+width:100%;
+max-width:480px;
+
+padding:30px;
+
+background:rgba(255,255,255,.05);
+
 backdrop-filter:blur(12px);
 
-border:1px solid rgba(255,215,0,.25);
+border-radius:30px;
+
+border:1px solid rgba(255,215,0,.2);
 
 box-shadow:
-0 0 40px rgba(255,215,0,.15),
-0 0 80px rgba(255,215,0,.05);
+0 0 30px rgba(255,215,0,.15),
+0 0 70px rgba(255,215,0,.05);
 
-animation:show .8s ease;
+animation:fadeIn .8s ease;
 }
 
-@keyframes show{
+@keyframes fadeIn{
 from{
 opacity:0;
 transform:translateY(30px);
@@ -55,48 +69,73 @@ transform:translateY(0);
 }
 
 .logo{
-width:130px;
-height:130px;
+width:140px;
+height:140px;
 display:block;
 margin:auto;
+
 border-radius:50%;
 object-fit:cover;
-border:4px solid gold;
-box-shadow:0 0 25px rgba(255,215,0,.5);
+
+border:4px solid #FFD700;
+
+box-shadow:
+0 0 20px rgba(255,215,0,.5),
+0 0 40px rgba(255,215,0,.25);
 }
 
 .title{
+
 text-align:center;
 margin-top:18px;
-font-size:32px;
-font-weight:bold;
-color:#FFD700;
+
+font-size:34px;
+font-weight:800;
+
+background:linear-gradient(
+90deg,
+#fff4b0,
+#ffd700,
+#ffb300
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .subtitle{
 text-align:center;
 margin-top:8px;
-color:#ddd;
+color:#d4d4d4;
 font-size:14px;
 }
 
 .content{
 margin-top:25px;
-line-height:2;
-color:#eee;
+line-height:2.2;
+color:#f1f1f1;
 font-size:14px;
 }
 
 .btn{
+
 display:block;
+
 text-decoration:none;
+
 text-align:center;
+
 padding:15px;
-border-radius:14px;
+
 margin-top:12px;
-font-weight:bold;
-color:white;
+
+border-radius:15px;
+
+font-weight:700;
+
 transition:.3s;
+
+color:white;
 }
 
 .btn:hover{
@@ -116,33 +155,48 @@ background:linear-gradient(
 );
 }
 
+.whatsapp{
+background:#25D366;
+}
+
 .phone{
 background:linear-gradient(
 90deg,
 #d4a017,
 #ffd700
 );
-color:#000;
+color:#111;
+}
+
+.save-contact{
+background:#5b21b6;
 }
 
 .address{
+
 margin-top:25px;
+
 padding-top:20px;
+
 border-top:1px solid rgba(255,255,255,.15);
+
 text-align:center;
+
 line-height:2;
+
 color:#ddd;
 }
 
 .footer{
 margin-top:20px;
 text-align:center;
-color:#999;
+color:#888;
 font-size:12px;
 }
 
 </style>
 </head>
+
 <body>
 
 <div class="card">
@@ -159,7 +213,7 @@ font-size:12px;
 
 <div class="content">
 
-✨ خدمات و محصولات:
+✨ خدمات و محصولات
 
 <br><br>
 
@@ -176,37 +230,46 @@ font-size:12px;
 <a class="btn telegram"
 href="https://t.me/faryallgold"
 target="_blank">
-تلگرام
+📨 تلگرام
 </a>
 
 <a class="btn instagram"
 href="https://www.instagram.com/faryallgold"
 target="_blank">
-اینستاگرام
+📷 اینستاگرام
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/989184674761"
+target="_blank">
+💬 واتساپ
 </a>
 
 <a class="btn phone"
 href="tel:09184674761">
-تماس با عامریان
+📞 تماس با عامریان
 </a>
 
 <a class="btn phone"
-href="tel:0918388918">
-تماس با رشیدی
+href="tel:09183889181">
+📞 تماس با رشیدی
 </a>
 
 <div class="address">
+
 کرمانشاه<br>
 مسکن، طلافروش‌ها<br>
 پاساژ نگین<br>
 گالری طلای فریال
+
 </div>
 
 <div class="footer">
-Faryal Gold Gallery ©
+Faryal Gold Gallery © 2025
 </div>
 
 </div>
 
 </body>
 </html>
+```
